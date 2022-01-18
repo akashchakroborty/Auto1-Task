@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should test the App Component should render the component 1`] = `
+<div>
+   Auto1 app
+</div>
+`;
