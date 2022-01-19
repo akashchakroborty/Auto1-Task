@@ -62,6 +62,13 @@ module.exports = {
           'sass-loader',
         ],
       },
+      {
+        test: /\.(png|jpe?g|gif)$/i,
+        loader: 'file-loader',
+        options: {
+          name: '[name].[ext]',
+        },
+      },
     ],
   },
   plugins: [
@@ -71,8 +78,8 @@ module.exports = {
       favicon: 'public/favicon.ico',
     }),
     new webpack.DefinePlugin({
-      "process.env.APP_ENV": JSON.stringify(process.env.APP_ENV)
-  }),
+      'process.env.APP_ENV': JSON.stringify(process.env.APP_ENV),
+    }),
     new MiniCssExtractPlugin({
       filename: 'css/name.[chunkhash:8].css',
       chunkFilename: 'css/[id].[chunkhash:8].css',
