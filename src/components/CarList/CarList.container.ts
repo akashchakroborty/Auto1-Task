@@ -24,6 +24,7 @@ const mapStateToProps = (state: AppState) => ({
 const mapDispatchToProps = (dispatch: ThunkDispatch<AppState, void, CarsActionTypes>) => {
   return {
     getCars: (props: CarsRequest) => {
+      // eslint-disable-next-line @typescript-eslint/no-floating-promises
       dispatch(getCars(props));
     },
   };

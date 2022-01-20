@@ -13,10 +13,9 @@ const useStyles = makeStyles((theme: Theme) =>
       justifyContent: 'center',
       alignItems: 'center',
     },
-  }),
-);
+  }),);
 
-const Footer = () => {
+const Footer: React.FC = () => {
   const classes = useStyles();
   return (
     <footer className={classes.footer}>

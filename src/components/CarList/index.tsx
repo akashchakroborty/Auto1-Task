@@ -9,9 +9,13 @@ export interface CarListProps {
   totalCarsCount: number;
 }
 
-const CarList: React.FC<CarListProps> = ({ getCars, cars, error, totalCarsCount }) => {
+const CarList: React.FC<CarListProps> = ({
+ getCars, cars, error, totalCarsCount
+}) => {
   useEffect(() => {
-    !cars.length && getCars({ sort: 'asc', page: 1 });
+    if(!cars.length) {
+      getCars({ sort: 'asc', page: 1 });
+    }
   }, [getCars]);
 
   return (

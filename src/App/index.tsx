@@ -1,7 +1,7 @@
 import React from 'react';
+import { Route, Switch } from 'react-router-dom';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
-import { Route, Switch } from 'react-router-dom';
 import Dashboard from '../pages/Dashboard';
 
 const App: React.FC = () => {

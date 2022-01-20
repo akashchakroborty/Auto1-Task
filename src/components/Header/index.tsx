@@ -1,8 +1,10 @@
 import React from 'react';
-import Logo from '../../assets/logo.png';
 import { makeStyles, createStyles } from '@mui/styles';
-import { Theme, AppBar, Toolbar, Link } from '@mui/material';
+import {
+ Theme, AppBar, Toolbar, Link
+} from '@mui/material';
 import { NavLink } from 'react-router-dom';
+import Logo from '../../assets/logo.png';
 
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
@@ -12,10 +14,9 @@ const useStyles = makeStyles((theme: Theme) =>
     logo: {
       margin: '10px 0',
     },
-  }),
-);
+  }),);
 
-const Header = () => {
+const Header: React.FC = () => {
   const classes = useStyles();
 
   return (

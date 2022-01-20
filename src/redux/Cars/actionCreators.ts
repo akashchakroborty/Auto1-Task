@@ -6,8 +6,7 @@ import { CarsActionTypes } from '../types/carsActionTypes';
 import { CarsRequest } from '../types/carsTypes';
 import { GET_CARS_LOADING, GET_CARS_SUCCESS, GET_CARS_FAILURE } from './constants';
 
-export const getCars =
-  (props: CarsRequest): ThunkAction<Promise<void>, AppState, void, CarsActionTypes> =>
+export const getCars = (props: CarsRequest): ThunkAction<Promise<void>, AppState, void, CarsActionTypes> =>
   async (dispatch: ThunkDispatch<AppState, void, CarsActionTypes>) => {
     try {
       dispatch({

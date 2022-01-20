@@ -24,6 +24,9 @@
     "no-return-assign": ["off"],
     "react/jsx-props-no-spreading": ["off"],
     "semi": ["error", "always"],
-    "import/no-cycle": ["off"]
+    "import/no-cycle": ["off"],
+    "@typescript-eslint/no-unsafe-return": ["off"],
+    "@typescript-eslint/no-explicit-any": ["off"],
+    "@typescript-eslint/no-unsafe-assignment": ["off"]
   }
 }
