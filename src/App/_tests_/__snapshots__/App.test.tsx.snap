@@ -1,11 +1,15 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`should test the App Component should render the component 1`] = `
-<Component>
-  <CssBaseline />
-  <BrowserRouter>
-    <Header />
-    <Footer />
-  </BrowserRouter>
-</Component>
+<Fragment>
+  <Header />
+  <Switch>
+    <Route
+      component={[Function]}
+      exact={true}
+      path="/"
+    />
+  </Switch>
+  <Footer />
+</Fragment>
 `;
