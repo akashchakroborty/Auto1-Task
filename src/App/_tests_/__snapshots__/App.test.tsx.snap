@@ -5,6 +5,7 @@ exports[`should test the App Component should render the component 1`] = `
   <CssBaseline />
   <BrowserRouter>
     <Header />
+    <Footer />
   </BrowserRouter>
 </Component>
 `;
