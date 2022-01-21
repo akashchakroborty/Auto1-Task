@@ -21,7 +21,7 @@ export enum StatusCode {
   success = 200,
 }
 
-export type ApiResponse = CarsResponse & Manufacturer[] & string[];
+export type ApiResponse = CarsResponse & { manufacturers: Manufacturer[] } & { colors: string[] };
 
 export const RestClient = async (options: Options): Promise<AxiosResponse<ApiResponse>> => {
   const commonHeader = {

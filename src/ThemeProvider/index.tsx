@@ -45,6 +45,14 @@ const theme = createTheme({
         },
       },
     },
+    MuiButton: {
+      styleOverrides: {
+        root: {
+          textTransform: 'capitalize',
+          width: 128,
+        },
+      },
+    },
   },
 });
 

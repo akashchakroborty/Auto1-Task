@@ -16,7 +16,7 @@ export const getColors = (): ThunkAction<Promise<void>, AppState, void, FiltersA
     if (response.status === StatusCode.success) {
       dispatch({
         type: GET_COLORS,
-        payload: response.data,
+        payload: response.data.colors,
       });
     }
   };
@@ -31,7 +31,7 @@ export const getManufacturers = (): ThunkAction<Promise<void>, AppState, void, F
     if (response.status === StatusCode.success) {
       dispatch({
         type: GET_MANUFACTURERS,
-        payload: response.data,
+        payload: response.data.manufacturers,
       });
     }
   };

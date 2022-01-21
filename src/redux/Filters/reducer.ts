@@ -26,7 +26,7 @@ const filtersReducer = (state = defaultState, action: FiltersActionTypes): Filte
     case SET_FILTERS:
       return {
         ...state,
-        activeFilters: { ...state.activeFilters , ...action.payload },
+        activeFilters: { ...state.activeFilters, ...action.payload },
       };
     default:
       return state;
