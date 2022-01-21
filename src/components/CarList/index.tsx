@@ -1,24 +1,52 @@
 import React, { useEffect } from 'react';
-import { Typography, Alert } from '@mui/material';
+import { Typography, Alert, Pagination } from '@mui/material';
+import { makeStyles } from '@mui/styles';
 import { Car, CarsRequest } from '../../redux/types/carsTypes';
 import { CarListItemSkeleton, CarListItem } from '../CarListItem';
 
 export interface CarListProps {
   getCars: (props: CarsRequest) => void;
+  setFilters: (props: CarsRequest) => void;
   cars: Car[];
   error: boolean;
   totalCarsCount: number;
   loading: boolean;
+  totalPageCount: number;
+  activeFilters: CarsRequest;
 }
 
+const useStyles = makeStyles({
+  pagination: {
+    display: 'flex',
+    justifyContent: 'center',
+  },
+});
+
 const CarList: React.FC<CarListProps> = ({
- getCars, cars, error, totalCarsCount, loading
+  getCars,
+  setFilters,
+  cars,
+  error,
+  totalCarsCount,
+  loading,
+  totalPageCount,
+  activeFilters,
 }) => {
+  const classes = useStyles();
+  const { page } = activeFilters;
+
   useEffect(() => {
     if (!cars.length) {
-      getCars({ sort: 'asc', page: 1 });
+      getCars({ ...activeFilters, page: 1 });
     }
   }, [getCars]);
+
+  const handlePaginationChange = (event: React.ChangeEvent<unknown>, value: number) => {
+    if (page !== value) {
+      setFilters({ page: value });
+      getCars({ ...activeFilters, page: value });
+    }
+  };
 
   return (
     <>
@@ -34,6 +62,14 @@ const CarList: React.FC<CarListProps> = ({
         : cars.map((carItem) => (
           <CarListItem key={`${carItem.stockNumber}-${carItem.modelName}`} carItem={carItem} />
           ))}
+      <Pagination
+        className={classes.pagination}
+        count={totalPageCount}
+        page={page}
+        showFirstButton
+        showLastButton
+        onChange={handlePaginationChange}
+      />
     </>
   );
 };

@@ -69,6 +69,7 @@ export const CarListItem: React.FC<CarListItemProps> = ({ carItem }) => {
         </Typography>
         <Typography variant="subtitle2" style={{ textTransform: 'capitalize' }}>
           Stock #
+          {' '}
           {stockNumber}
           {' '}
           -

@@ -1,5 +1,5 @@
 import { CarsRequest } from '../../redux/types/carsTypes';
-import { CARS_URL } from './urls';
+import { CARS_URL, COLORS_URL, MANUFACTURERS_URL } from './urls';
 
 const pickBy = (object: { [s: string]: unknown } | ArrayLike<unknown>, predicate = (v: any) => v) =>
   Object.entries(object)
@@ -22,4 +22,12 @@ export const getCarsUrl = (props: CarsRequest): string => {
     },
     CARS_URL,
   );
+};
+
+export const getColorsUrl = (): string => {
+  return COLORS_URL;
+};
+
+export const getManufacturersUrl = (): string => {
+  return MANUFACTURERS_URL;
 };
