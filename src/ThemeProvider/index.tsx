@@ -28,7 +28,6 @@ const theme = createTheme({
         root: {
           textTransform: 'none',
           textDecoration: 'none',
-          margin: '10px 15px',
           '&:hover': {
             color: '#D37324',
             textDecoration: 'underline',
@@ -36,6 +35,13 @@ const theme = createTheme({
           '&.active': {
             color: '#D37324',
           },
+        },
+      },
+    },
+    MuiCardMedia: {
+      styleOverrides: {
+        root: {
+          width: 'auto',
         },
       },
     },

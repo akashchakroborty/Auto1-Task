@@ -11,6 +11,9 @@ const useStyles = makeStyles((theme: Theme) =>
     appBar: {
       borderBottom: `1px solid ${theme.palette.divider}`,
     },
+    link: {
+      margin: '10px 15px !important',
+    },
     logo: {
       margin: '10px 0',
     },
@@ -26,13 +29,13 @@ const Header: React.FC = () => {
           <img src={Logo} alt="Auto1 Logo" className={classes.logo} />
         </NavLink>
         <nav>
-          <Link variant="button" color="textPrimary" component={NavLink} to="/purchase">
+          <Link variant="button" className={classes.link} color="textPrimary" component={NavLink} to="/purchase">
             Purchase
           </Link>
-          <Link variant="button" color="textPrimary" component={NavLink} to="/orders">
+          <Link variant="button" className={classes.link} color="textPrimary" component={NavLink} to="/orders">
             My Orders
           </Link>
-          <Link variant="button" color="textPrimary" component={NavLink} to="/sell">
+          <Link variant="button" className={classes.link} color="textPrimary" component={NavLink} to="/sell">
             Sell
           </Link>
         </nav>
