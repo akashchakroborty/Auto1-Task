@@ -7,6 +7,8 @@ import store from './redux/store';
 import ThemeProvider from './ThemeProvider';
 import App from './App';
 
+import './index.scss';
+
 ReactDOM.render(
   <ThemeProvider>
     <CssBaseline />
