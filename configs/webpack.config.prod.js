@@ -24,6 +24,25 @@ module.exports = {
         minRatio: 0.8,
       }),
     ],
+    splitChunks: {
+      cacheGroups: {
+        default: false,
+        vendors: false,
+        vendor: {
+          name: 'vendor',
+          chunks: 'all',
+          test: /[\\/]node_modules[\\/]/,
+        },
+        common: {
+          name: 'common',
+          minChunks: 2,
+          chunks: 'async',
+          priority: 10,
+          reuseExistingChunk: true,
+          enforce: true,
+        },
+      },
+    },
   },
   entry: './src/index.tsx',
   output: {
