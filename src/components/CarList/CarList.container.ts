@@ -8,7 +8,7 @@ import {
   selectTotalCarsCount,
   selectTotalPageCount,
 } from '../../redux/Cars/selector';
-import { AppState } from '../../Redux/store';
+import { AppState } from '../../redux/store';
 import { CarsActionTypes } from '../../redux/types/carsActionTypes';
 import { CarsRequest } from '../../redux/types/carsTypes';
 import CarList from '.';

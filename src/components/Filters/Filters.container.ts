@@ -1,7 +1,7 @@
 import { connect } from 'react-redux';
 import { ThunkDispatch } from 'redux-thunk';
 import { getCars } from '../../redux/Cars/actionCreators';
-import { AppState } from '../../Redux/store';
+import { AppState } from '../../redux/store';
 import { CarsActionTypes } from '../../redux/types/carsActionTypes';
 import { CarsRequest } from '../../redux/types/carsTypes';
 import Filters from '.';

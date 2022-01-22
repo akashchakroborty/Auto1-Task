@@ -3,7 +3,7 @@ import { ThunkDispatch } from 'redux-thunk';
 import { withRouter } from 'react-router-dom';
 import { clearCarDetails, getCarDetails } from '../../redux/Cars/actionCreators';
 import { selectCarDetails } from '../../redux/Cars/selector';
-import { AppState } from '../../Redux/store';
+import { AppState } from '../../redux/store';
 import { CarsActionTypes } from '../../redux/types/carsActionTypes';
 import CarDetails from '.';
 
