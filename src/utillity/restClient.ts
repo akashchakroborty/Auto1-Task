@@ -1,5 +1,5 @@
 import axios, { AxiosResponse, Method } from 'axios';
-import { CarsResponse } from '../redux/types/carsTypes';
+import { Car, CarsResponse } from '../redux/types/carsTypes';
 import { Manufacturer } from '../redux/types/filtersTypes';
 
 export interface Options {
@@ -21,7 +21,9 @@ export enum StatusCode {
   success = 200,
 }
 
-export type ApiResponse = CarsResponse & { manufacturers: Manufacturer[] } & { colors: string[] };
+export type ApiResponse = CarsResponse & { manufacturers: Manufacturer[] } & {
+  colors: string[];
+} & { car: Car };
 
 export const RestClient = async (options: Options): Promise<AxiosResponse<ApiResponse>> => {
   const commonHeader = {

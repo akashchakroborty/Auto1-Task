@@ -30,10 +30,17 @@ export interface CarsResponse {
   totalCarsCount: number;
 }
 
+export interface CarDetails {
+  data?: Car;
+  loading: boolean;
+  error: boolean;
+}
+
 export interface CarsState {
   data: Car[];
   totalPageCount: number;
   totalCarsCount: number;
   loading: boolean;
   error: boolean;
+  carDetails: CarDetails;
 }

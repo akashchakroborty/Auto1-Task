@@ -3,13 +3,27 @@
 exports[`should test the App Component should render the component 1`] = `
 <Fragment>
   <Header />
-  <Switch>
-    <Route
-      component={[Function]}
-      exact={true}
-      path="/"
-    />
-  </Switch>
+  <main
+    id="content"
+  >
+    <Switch>
+      <Route
+        component={[Function]}
+        exact={true}
+        path="/"
+      />
+      <Route
+        component={[Function]}
+        exact={true}
+        path="/details/:id"
+      />
+      <Route
+        path="*"
+      >
+        <Error404 />
+      </Route>
+    </Switch>
+  </main>
   <Footer />
 </Fragment>
 `;

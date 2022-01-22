@@ -1,6 +1,14 @@
 import { CarsActionTypes } from '../types/carsActionTypes';
 import { CarsState } from '../types/carsTypes';
-import { GET_CARS_FAILURE, GET_CARS_LOADING, GET_CARS_SUCCESS } from './constants';
+import {
+  CLEAR_CAR_DETAILS,
+  GET_CARS_FAILURE,
+  GET_CARS_LOADING,
+  GET_CARS_SUCCESS,
+  GET_CAR_DETAILS_FAILURE,
+  GET_CAR_DETAILS_LOADING,
+  GET_CAR_DETAILS_SUCCESS,
+} from './constants';
 
 export const defaultState: CarsState = {
   data: [],
@@ -8,6 +16,10 @@ export const defaultState: CarsState = {
   totalPageCount: 0,
   loading: false,
   error: false,
+  carDetails: {
+    loading: false,
+    error: false,
+  },
 };
 
 const carsReducer = (state = defaultState, action: CarsActionTypes): CarsState => {
@@ -30,6 +42,26 @@ const carsReducer = (state = defaultState, action: CarsActionTypes): CarsState =
         ...state,
         ...defaultState,
         error: true,
+      };
+    case GET_CAR_DETAILS_LOADING:
+      return {
+        ...state,
+        carDetails: { ...defaultState.carDetails, loading: action.payload },
+      };
+    case GET_CAR_DETAILS_SUCCESS:
+      return {
+        ...state,
+        carDetails: { ...defaultState.carDetails, data: action.payload },
+      };
+    case GET_CAR_DETAILS_FAILURE:
+      return {
+        ...state,
+        carDetails: { ...defaultState.carDetails, error: true },
+      };
+    case CLEAR_CAR_DETAILS:
+      return {
+        ...state,
+        carDetails: { ...defaultState.carDetails },
       };
     default:
       return state;
