@@ -1,0 +1,55 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should test the Error404 Component should render the component 1`] = `
+<ForwardRef(Container)
+  className="makeStyles-container-1"
+  maxWidth="sm"
+>
+  <img
+    alt="Auto1 Logo"
+    className="makeStyles-image-2"
+    src=""
+  />
+  <ForwardRef(Typography)
+    fontWeight={700}
+    gutterBottom={true}
+    variant="h3"
+  >
+    404 - Not Found
+  </ForwardRef(Typography)>
+  <ForwardRef(Typography)
+    component="h5"
+    gutterBottom={true}
+    variant="subtitle1"
+  >
+    Sorry, the page you are looking for does not exists.
+  </ForwardRef(Typography)>
+  <ForwardRef(Typography)
+    gutterBottom={true}
+    variant="subtitle1"
+  >
+    You can always go back to the
+     
+    <ForwardRef(Link)
+      color="primary"
+      component={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "propTypes": Object {
+            "innerRef": [Function],
+            "onClick": [Function],
+            "replace": [Function],
+            "target": [Function],
+            "to": [Function],
+          },
+          "render": [Function],
+        }
+      }
+      to="/"
+    >
+      homepage
+    </ForwardRef(Link)>
+    .
+  </ForwardRef(Typography)>
+</ForwardRef(Container)>
+`;

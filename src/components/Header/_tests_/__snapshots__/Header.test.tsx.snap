@@ -1,0 +1,122 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should test the Header Component should render the component 1`] = `
+<ForwardRef(AppBar)
+  className="makeStyles-appBar-1"
+  color="inherit"
+  elevation={0}
+  position="static"
+>
+  <ForwardRef(Toolbar)>
+    <NavLink
+      style={
+        Object {
+          "flexGrow": 1,
+        }
+      }
+      to="/"
+    >
+      <img
+        alt="Auto1 Logo"
+        className="makeStyles-logo-3"
+        src=""
+      />
+    </NavLink>
+    <nav>
+      <ForwardRef(Link)
+        className="makeStyles-link-2"
+        color="textPrimary"
+        component={
+          Object {
+            "$$typeof": Symbol(react.forward_ref),
+            "propTypes": Object {
+              "activeClassName": [Function],
+              "activeStyle": [Function],
+              "aria-current": [Function],
+              "className": [Function],
+              "exact": [Function],
+              "innerRef": [Function],
+              "isActive": [Function],
+              "location": [Function],
+              "onClick": [Function],
+              "replace": [Function],
+              "sensitive": [Function],
+              "strict": [Function],
+              "style": [Function],
+              "target": [Function],
+              "to": [Function],
+            },
+            "render": [Function],
+          }
+        }
+        to="/purchase"
+        variant="button"
+      >
+        Purchase
+      </ForwardRef(Link)>
+      <ForwardRef(Link)
+        className="makeStyles-link-2"
+        color="textPrimary"
+        component={
+          Object {
+            "$$typeof": Symbol(react.forward_ref),
+            "propTypes": Object {
+              "activeClassName": [Function],
+              "activeStyle": [Function],
+              "aria-current": [Function],
+              "className": [Function],
+              "exact": [Function],
+              "innerRef": [Function],
+              "isActive": [Function],
+              "location": [Function],
+              "onClick": [Function],
+              "replace": [Function],
+              "sensitive": [Function],
+              "strict": [Function],
+              "style": [Function],
+              "target": [Function],
+              "to": [Function],
+            },
+            "render": [Function],
+          }
+        }
+        to="/orders"
+        variant="button"
+      >
+        My Orders
+      </ForwardRef(Link)>
+      <ForwardRef(Link)
+        className="makeStyles-link-2"
+        color="textPrimary"
+        component={
+          Object {
+            "$$typeof": Symbol(react.forward_ref),
+            "propTypes": Object {
+              "activeClassName": [Function],
+              "activeStyle": [Function],
+              "aria-current": [Function],
+              "className": [Function],
+              "exact": [Function],
+              "innerRef": [Function],
+              "isActive": [Function],
+              "location": [Function],
+              "onClick": [Function],
+              "replace": [Function],
+              "sensitive": [Function],
+              "strict": [Function],
+              "style": [Function],
+              "target": [Function],
+              "to": [Function],
+            },
+            "render": [Function],
+          }
+        }
+        to="/sell"
+        variant="button"
+      >
+        Sell
+      </ForwardRef(Link)>
+    </nav>
+  </ForwardRef(Toolbar)>
+</ForwardRef(AppBar)>
+`;

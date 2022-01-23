@@ -17,4 +17,8 @@ export interface SetFilters {
   payload: CarsRequest;
 }
 
-export type FiltersActionTypes = GetColors | GetManufacturers | SetFilters;
+export interface FiltersInvalid {
+  type: null;
+}
+
+export type FiltersActionTypes = GetColors | GetManufacturers | SetFilters | FiltersInvalid;

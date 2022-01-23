@@ -6,23 +6,45 @@ exports[`should test the App Component should render the component 1`] = `
   <main
     id="content"
   >
-    <Switch>
-      <Route
-        component={[Function]}
-        exact={true}
-        path="/"
-      />
-      <Route
-        component={[Function]}
-        exact={true}
-        path="/details/:id"
-      />
-      <Route
-        path="*"
-      >
-        <Error404 />
-      </Route>
-    </Switch>
+    <Suspense
+      fallback={<ForwardRef(LinearProgress) />}
+    >
+      <Switch>
+        <Route
+          component={
+            Object {
+              "$$typeof": Symbol(react.lazy),
+              "_init": [Function],
+              "_payload": Object {
+                "_result": [Function],
+                "_status": -1,
+              },
+            }
+          }
+          exact={true}
+          path="/"
+        />
+        <Route
+          component={
+            Object {
+              "$$typeof": Symbol(react.lazy),
+              "_init": [Function],
+              "_payload": Object {
+                "_result": [Function],
+                "_status": -1,
+              },
+            }
+          }
+          exact={true}
+          path="/details/:id"
+        />
+        <Route
+          path="*"
+        >
+          <lazy />
+        </Route>
+      </Switch>
+    </Suspense>
   </main>
   <Footer />
 </Fragment>

@@ -1,0 +1,34 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should test the Dashboard Component should render the component 1`] = `
+<ForwardRef(Container)
+  className="makeStyles-container-1"
+>
+  <ForwardRef(Grid)
+    container={true}
+    spacing={2}
+  >
+    <ForwardRef(Grid)
+      item={true}
+      md={4}
+      sm={12}
+      xs={12}
+    >
+      <ForwardRef(Paper)
+        square={true}
+        variant="outlined"
+      >
+        <Connect(Filters) />
+      </ForwardRef(Paper)>
+    </ForwardRef(Grid)>
+    <ForwardRef(Grid)
+      item={true}
+      md={8}
+      sm={12}
+      xs={12}
+    >
+      <Connect(CarList) />
+    </ForwardRef(Grid)>
+  </ForwardRef(Grid)>
+</ForwardRef(Container)>
+`;

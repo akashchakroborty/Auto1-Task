@@ -40,6 +40,10 @@ export interface ClearCarDetails {
   type: typeof CLEAR_CAR_DETAILS;
 }
 
+export interface CarsInvalid {
+  type: null;
+}
+
 export type CarsActionTypes =
   | GetCarsLoading
   | GetCarsSuccess
@@ -47,4 +51,5 @@ export type CarsActionTypes =
   | GetCarDetailsLoading
   | GetCarDetailsSuccess
   | GetCarDETAILSFailure
-  | ClearCarDetails;
+  | ClearCarDetails
+  | CarsInvalid;

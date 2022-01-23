@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should test the Footer Component should render the component 1`] = `
+<footer
+  className="makeStyles-footer-1"
+>
+  <ForwardRef(Typography)
+    align="center"
+    color="textSecondary"
+    variant="body2"
+  >
+    © AUTO1 Group 2022
+  </ForwardRef(Typography)>
+</footer>
+`;
