@@ -36,12 +36,24 @@ To check the coverage please run
 yarn covearge
 ```
 
+To check for linting error please run
+
+```
+yarn lint
+```
+
+To fix for linting error please run
+
+```
+yarn lint-fix
+```
+
 ## Technologies used
 
 - [React](https://github.com/facebook/create-react-app) - The web Library.
 - [Redux](https://redux.js.org/) - A Predictable State Container for JS Apps.
 - [Redux-Thunk](https://github.com/reduxjs/redux-thunk) - To manage application side effects.
-- [MUI](https://mui.com/): For UI components.
+- [MUI](https://mui.com/) - For UI components.
 - [axios](https://github.com/axios/axios) - As HTTP client.
 - [TypeScript](https://www.typescriptlang.org/) - Programming language.
 - [Jest](https://jestjs.io/en/) - Testing Framework.
