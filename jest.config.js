@@ -2,7 +2,7 @@ module.exports = {
   roots: ['<rootDir>/src'],
   transform: {
     '^.+\\.tsx?$': 'ts-jest',
-    ".+\\.(css|scss|png|jpg|svg)$": "jest-transform-stub"
+    '.+\\.(css|scss|png|jpg|svg)$': 'jest-transform-stub',
   },
   testRegex: '(/__tests__/.*|(\\.|/)(test|spec))\\.tsx?$',
   moduleFileExtensions: ['ts', 'tsx', 'js', 'jsx', 'json', 'node'],
@@ -12,5 +12,5 @@ module.exports = {
   moduleNameMapper: {
     '\\.(css|less|scss|sss|styl)$': '<rootDir>/node_modules/jest-css-modules',
   },
-  coveragePathIgnorePatterns: ['node_modules'],
+  coveragePathIgnorePatterns: ['node_modules', '.container.ts'],
 };

@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { Typography, Alert, Pagination } from '@mui/material';
 import { makeStyles } from '@mui/styles';
 import { Car, CarsRequest } from '../../redux/types/carsTypes';
@@ -35,7 +35,7 @@ const CarList: React.FC<CarListProps> = ({
   const classes = useStyles();
   const { page } = activeFilters;
 
-  useEffect(() => {
+  React.useEffect(() => {
     if (!cars.length) {
       getCars({ ...activeFilters, page: 1 });
     }
@@ -56,7 +56,7 @@ const CarList: React.FC<CarListProps> = ({
       <Typography variant="h6" component="h1">
         {`Showing ${cars.length} of ${totalCarsCount} results`}
       </Typography>
-      {error && <Alert severity="error">An error has occured.</Alert>}
+      {error && <Alert id="errorAlert" severity="error">An error has occured.</Alert>}
       {loading
         ? Array.from(Array(10).keys()).map((item) => <CarListItemSkeleton key={item} />)
         : cars.map((carItem) => (
@@ -66,6 +66,7 @@ const CarList: React.FC<CarListProps> = ({
         className={classes.pagination}
         count={totalPageCount}
         page={page}
+        id="pagination"
         showFirstButton
         showLastButton
         onChange={handlePaginationChange}
@@ -73,5 +74,7 @@ const CarList: React.FC<CarListProps> = ({
     </>
   );
 };
+
+CarListItemSkeleton.displayName = 'CarListItemSkeleton';
 
 export default CarList;

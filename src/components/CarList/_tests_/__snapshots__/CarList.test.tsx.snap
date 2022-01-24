@@ -1,0 +1,198 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should test the CarList Component should render the component 1`] = `
+<Fragment>
+  <ForwardRef(Typography)
+    component="h1"
+    fontWeight={700}
+    variant="h6"
+  >
+    Available cars
+  </ForwardRef(Typography)>
+  <ForwardRef(Typography)
+    component="h1"
+    variant="h6"
+  >
+    Showing 10 of 1000 results
+  </ForwardRef(Typography)>
+  <Component
+    carItem={
+      Object {
+        "color": "black",
+        "fuelType": "Diesel",
+        "manufacturerName": "Porsche",
+        "mileage": Object {
+          "number": 100056,
+          "unit": "km",
+        },
+        "modelName": "718 Cayman",
+        "pictureUrl": "https://auto1-js-task-api--mufasa71.repl.co/images/car.svg",
+        "stockNumber": 97074,
+      }
+    }
+    key="97074-718 Cayman"
+  />
+  <Component
+    carItem={
+      Object {
+        "color": "yellow",
+        "fuelType": "Petrol",
+        "manufacturerName": "Tesla",
+        "mileage": Object {
+          "number": 100481,
+          "unit": "km",
+        },
+        "modelName": "Roadster",
+        "pictureUrl": "https://auto1-js-task-api--mufasa71.repl.co/images/car.svg",
+        "stockNumber": 12876,
+      }
+    }
+    key="12876-Roadster"
+  />
+  <Component
+    carItem={
+      Object {
+        "color": "white",
+        "fuelType": "Petrol",
+        "manufacturerName": "Fiat",
+        "mileage": Object {
+          "number": 100710,
+          "unit": "km",
+        },
+        "modelName": "131",
+        "pictureUrl": "https://auto1-js-task-api--mufasa71.repl.co/images/car.svg",
+        "stockNumber": 18029,
+      }
+    }
+    key="18029-131"
+  />
+  <Component
+    carItem={
+      Object {
+        "color": "black",
+        "fuelType": "Petrol",
+        "manufacturerName": "Skoda",
+        "mileage": Object {
+          "number": 100751,
+          "unit": "km",
+        },
+        "modelName": "Felicia",
+        "pictureUrl": "https://auto1-js-task-api--mufasa71.repl.co/images/car.svg",
+        "stockNumber": 65672,
+      }
+    }
+    key="65672-Felicia"
+  />
+  <Component
+    carItem={
+      Object {
+        "color": "yellow",
+        "fuelType": "Diesel",
+        "manufacturerName": "Mercedes-Benz",
+        "mileage": Object {
+          "number": 100782,
+          "unit": "km",
+        },
+        "modelName": "Sprinter",
+        "pictureUrl": "https://auto1-js-task-api--mufasa71.repl.co/images/car.svg",
+        "stockNumber": 42578,
+      }
+    }
+    key="42578-Sprinter"
+  />
+  <Component
+    carItem={
+      Object {
+        "color": "green",
+        "fuelType": "Diesel",
+        "manufacturerName": "Tesla",
+        "mileage": Object {
+          "number": 100929,
+          "unit": "km",
+        },
+        "modelName": "Roadster",
+        "pictureUrl": "https://auto1-js-task-api--mufasa71.repl.co/images/car.svg",
+        "stockNumber": 70917,
+      }
+    }
+    key="70917-Roadster"
+  />
+  <Component
+    carItem={
+      Object {
+        "color": "black",
+        "fuelType": "Diesel",
+        "manufacturerName": "Tesla",
+        "mileage": Object {
+          "number": 100997,
+          "unit": "km",
+        },
+        "modelName": "Model X",
+        "pictureUrl": "https://auto1-js-task-api--mufasa71.repl.co/images/car.svg",
+        "stockNumber": 53029,
+      }
+    }
+    key="53029-Model X"
+  />
+  <Component
+    carItem={
+      Object {
+        "color": "red",
+        "fuelType": "Petrol",
+        "manufacturerName": "Chrysler",
+        "mileage": Object {
+          "number": 101001,
+          "unit": "km",
+        },
+        "modelName": "Viper",
+        "pictureUrl": "https://auto1-js-task-api--mufasa71.repl.co/images/car.svg",
+        "stockNumber": 77489,
+      }
+    }
+    key="77489-Viper"
+  />
+  <Component
+    carItem={
+      Object {
+        "color": "blue",
+        "fuelType": "Petrol",
+        "manufacturerName": "Tesla",
+        "mileage": Object {
+          "number": 101066,
+          "unit": "km",
+        },
+        "modelName": "Roadster",
+        "pictureUrl": "https://auto1-js-task-api--mufasa71.repl.co/images/car.svg",
+        "stockNumber": 98739,
+      }
+    }
+    key="98739-Roadster"
+  />
+  <Component
+    carItem={
+      Object {
+        "color": "green",
+        "fuelType": "Diesel",
+        "manufacturerName": "Porsche",
+        "mileage": Object {
+          "number": 101069,
+          "unit": "km",
+        },
+        "modelName": "968",
+        "pictureUrl": "https://auto1-js-task-api--mufasa71.repl.co/images/car.svg",
+        "stockNumber": 72351,
+      }
+    }
+    key="72351-968"
+  />
+  <ForwardRef(Pagination)
+    className="makeStyles-pagination-1"
+    count={100}
+    id="pagination"
+    onChange={[Function]}
+    page={1}
+    showFirstButton={true}
+    showLastButton={true}
+  />
+</Fragment>
+`;

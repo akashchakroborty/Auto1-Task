@@ -1,0 +1,109 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should test the CarListItem Component should render the component 1`] = `
+<ForwardRef(Card)
+  className="makeStyles-card-1"
+  elevation={0}
+  raised={false}
+  square={true}
+  variant="outlined"
+>
+  <ForwardRef(CardMedia)
+    alt="Car Thumbnail"
+    component="img"
+    height={75}
+    image="https://auto1-js-task-api--mufasa71.repl.co/images/car.svg"
+    title="Car Thumbnail"
+    width={100}
+  />
+  <ForwardRef(CardContent)
+    className="makeStyles-content-2"
+  >
+    <ForwardRef(Typography)
+      fontWeight={700}
+      variant="h6"
+    >
+      Porsche
+       
+      718 Cayman
+    </ForwardRef(Typography)>
+    <ForwardRef(Typography)
+      style={
+        Object {
+          "textTransform": "capitalize",
+        }
+      }
+      variant="subtitle2"
+    >
+      Stock #
+       
+      97074
+       
+      -
+       
+      100,056
+       
+      KM
+       
+      -
+       
+      Diesel
+       
+      -
+       
+      black
+    </ForwardRef(Typography)>
+    <ForwardRef(Link)
+      color="primary"
+      component={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "propTypes": Object {
+            "innerRef": [Function],
+            "onClick": [Function],
+            "replace": [Function],
+            "target": [Function],
+            "to": [Function],
+          },
+          "render": [Function],
+        }
+      }
+      to="/details/97074"
+    >
+      <ForwardRef(Typography)
+        variant="subtitle2"
+      >
+        View Details
+      </ForwardRef(Typography)>
+    </ForwardRef(Link)>
+  </ForwardRef(CardContent)>
+</ForwardRef(Card)>
+`;
+
+exports[`should test the CarListItemSkeleton Component should render the component 1`] = `
+<ForwardRef(Card)
+  className="makeStyles-card-1"
+  elevation={0}
+  raised={false}
+  square={true}
+  variant="outlined"
+>
+  <ForwardRef(Skeleton)
+    height={75}
+    variant="rectangular"
+    width={100}
+  />
+  <ForwardRef(CardContent)
+    className="makeStyles-content-2"
+  >
+    <ForwardRef(Skeleton)
+      height={40}
+      width={300}
+    />
+    <ForwardRef(Skeleton) />
+    <ForwardRef(Skeleton)
+      width={100}
+    />
+  </ForwardRef(CardContent)>
+</ForwardRef(Card)>
+`;

@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import {
   Typography,
   Button,
@@ -56,17 +56,17 @@ export const CarDetail: React.FC<CarDetialsProps> = ({
 }) => {
   const { loading, error, data } = carDetails;
   const classes = useStyles();
-  const [favorites, setFavorites] = useState(
+  const [favorites, setFavorites] = React.useState(
     () => JSON.parse(localStorage.getItem('favorites') || '[]') as number[],
   );
-  useEffect(() => {
+  React.useEffect(() => {
     getCarDetails(+id);
     return () => {
       clearCarDetails();
     };
   }, []);
 
-  useEffect(() => {
+  React.useEffect(() => {
     localStorage.setItem('favorites', JSON.stringify(favorites));
   }, [favorites]);
 
@@ -132,6 +132,7 @@ export const CarDetail: React.FC<CarDetialsProps> = ({
                 <Button
                   variant="contained"
                   color="primary"
+                  id="favoriteButton"
                   fullWidth={false}
                   size="medium"
                   className={classes.favoriteButton}

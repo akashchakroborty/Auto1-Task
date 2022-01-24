@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import {
  Button, FormControl, MenuItem, Select, InputLabel
 } from '@mui/material';
@@ -58,7 +58,7 @@ const Filters: React.FC<FiltersProps> = ({
  color, manufacturer, page: 1, sort
 });
   };
-  useEffect(() => {
+  React.useEffect(() => {
     if (!colors.length) {
       getColors();
     }
@@ -67,7 +67,7 @@ const Filters: React.FC<FiltersProps> = ({
     }
   }, [getColors, getManufacturers]);
   return (
-    <form className={classes.form} onSubmit={handleSubmit}>
+    <form className={classes.form}>
       <InputLabel id="colorFilterLabel">Color</InputLabel>
       <FormControl variant="outlined" className={classes.formControl}>
         <Select
@@ -114,6 +114,8 @@ const Filters: React.FC<FiltersProps> = ({
       </FormControl>
       <Button
         type="submit"
+        id="filterButton"
+        onClick={handleSubmit}
         variant="contained"
         color="primary"
         fullWidth={false}
