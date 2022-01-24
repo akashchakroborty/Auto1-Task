@@ -1,4 +1,7 @@
-### Installing
+# Auto1 Cars Dashboard
+> This is an example project for a cars Dashboard. You can view list of cars, filter them and view detail of specific car.
+
+## Installing
 
 Steps to get a development env running:
 
